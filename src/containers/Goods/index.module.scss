@@ -1,0 +1,43 @@
+.fixation {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.fixation img {
+    width: 100%;
+}
+
+.single_foo_menu {
+    position: absolute;
+    z-index: 90 !important;
+    width: 100%;
+}
+
+.goods_all {
+    overflow: hidden;
+    top: 250px;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.goods_left {
+    float: left;
+    width: 30%;
+    overflow-y: auto;
+    height: 100%;
+    padding-bottom: 300px;
+}
+
+.goods_right {
+    box-sizing: border-box;
+    float: right;
+    position: absolute;
+    width: 70%;
+    left: 30%;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 300px;
+}

@@ -1,0 +1,67 @@
+.root {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  color: #666;
+  text-decoration: none;
+}
+
+.ico {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  height: 25px;
+  width: 100%;
+  background-size: 100% 25px;
+
+}
+
+.text {
+  display: block;
+  line-height: 1;
+}
+
+.i-index {
+  background-image: url("../../../imgs/home.svg");
+}
+
+.i-shop {
+  background-image: url("../../../imgs/shop.svg");
+}
+
+.i-goods {
+  background-image: url("../../../imgs/goods.svg");
+}
+
+.i-my {
+  background-image: url("../../../imgs/my.svg");
+}
+
+.navOne,
+.navTwo,
+.navThree,
+.navFour {
+    color: #1abc9c;
+
+    &:hover,
+    &:active {
+        color: #1abc9c;
+    }
+}
+
+.navOne>.i-index{
+  background-image: url("../../../imgs/home-s.svg");
+}
+.navTwo>.i-shop{
+  background-image: url("../../../imgs/shop-s.svg");
+}
+.navThree>.i-goods{
+  background-image: url("../../../imgs/goods-s.svg");
+}
+.navFour>.i-my{
+  background-image: url("../../../imgs/my-s.svg");
+}

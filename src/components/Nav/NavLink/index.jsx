@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import styles from './index.scss'
+import { NavLink } from 'react-router-dom'
+import styles from './index.module.scss'
 
-export default class NavLink extends Component {
+export default class MyLink extends Component {
   
   render() {
-    const { pathUrl, icoName, linkName, ...rest } = this.props;
+    const { pathUrl, icoName, linkName,active, ...rest } = this.props;
     return (
-    <Link
+    <NavLink
       {...rest}
       to={pathUrl}
-      // activeClassName={active}
+      activeClassName={styles[active]}
       className={styles.root}
     >
-    <i className={icoName + ' ' + styles.ico} />
+    <i className={styles[icoName] + ' ' + styles.ico} />
     <span className={styles.text}>{linkName}</span>
-    </Link>
+    </NavLink>
     )
   }
 }

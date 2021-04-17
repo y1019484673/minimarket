@@ -1,42 +1,35 @@
 import React, { Component } from 'react'
-import NavLink from './NavLink/index.jsx'
-import styles from './index.scss'
+import Mylink from './NavLink/index.jsx'
+import styles from './index.module.scss'
 
 export default class Nav extends Component {
     render() {
         return (
             <div>
-                <div style={{ height: '1.2rem' }}></div>
                 <div className={styles.root}>
-                    <NavLink
+                    <Mylink
                         pathUrl="/"
-                        icoName={"i-zhuye42un"}
-                        // active={styles.navOne}
+                        icoName={"i-index"}
+                        active={"navOne"}
                         linkName="首页"
-                        // onlyActiveOnIndex
+                        exact
                     />
-                    <NavLink
+                    <Mylink
                         pathUrl="/shop"
-                        icoName="i-haodian42un"
-                        // active={styles.navTwo}
-                        linkName="好店"
+                        icoName="i-shop"
+                        active={"navTwo"}
+                        linkName="商家"
                     />
-                    <NavLink
-                        pathUrl="/coupon"
-                        icoName="i-youhui42un"
-                        // active={styles.navThree}
-                        linkName="优惠"
+                    <Mylink
+                        pathUrl="/goods"
+                        icoName="i-goods"
+                        active={"navThree"}
+                        linkName="商品"
                     />
-                    <NavLink
-                        pathUrl="/tour"
-                        icoName="i-zhoubian42un"
-                        // active={styles.navFour}
-                        linkName="周边"
-                    />
-                    <NavLink
-                        pathUrl="/user"
-                        icoName="i-wode42un"
-                        // active={styles.navFive}
+                    <Mylink
+                        pathUrl="/my"
+                        icoName="i-my"
+                        active={"navFour"}
                         linkName="我的"
                     />
                 </div>

@@ -31,7 +31,7 @@ http.interceptors.request.use(config => {
     // 最后必须返回config
     return config
 }, function (error) {
-    router.push('/loginUser')
+    // router.push('/loginUser')
     return Promise.reject(error)
 })
 
@@ -49,7 +49,7 @@ http.interceptors.response.use(config => {
                 // Vue.nextTick(() => {
                 //     router.push('/loginUser')
                 // })
-                return config
+                break;
             case 500:
                 if (error.response.data.code === 401) {
                     // Notify({
@@ -57,9 +57,9 @@ http.interceptors.response.use(config => {
                     //   message: error.response.data.message
                     // });
                 }
-                return config
+                break;
             default:
-                return config
+                break;
         }
     }
     return Promise.reject(error)

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Nav } from './components'
+import styles from './index.module.scss'
 
-export default class Home extends Component {
+export default class Shop extends Component {
     render() {
         return (
             <div>
-                <Nav/>
+                商家
             </div>
         )
     }

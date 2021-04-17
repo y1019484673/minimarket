@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root{
+  font-size: 14px;
+}
+
+*{ 
+  touch-action: none; 
+}
+
+#root .am-wingblank,.am-wingblank-lg{
+  margin-left: 0;
+  margin-right: 0;
+}

@@ -1,6 +1,5 @@
 
 import {
-    axiosGet,
     axiosPost
 } from '../http/index'
 import md5 from 'js-md5'
